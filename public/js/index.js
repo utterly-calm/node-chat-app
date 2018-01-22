@@ -17,7 +17,7 @@ socket.on("newMessage", function (message) {
 $("#message-form").on("submit", function (e) {
     e.preventDefault();
     socket.emit('createMessage', {
-        from: "Manu",
+        from: "Manu & Ashish Chatting live",
         text: $("[name=message]").val()
     }, function (data) {
         console.log("gGot it", data);
