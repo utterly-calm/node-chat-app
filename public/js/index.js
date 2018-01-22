@@ -28,7 +28,7 @@ $("#message-form").on("submit", function (e) {
     e.preventDefault();
     var messageTextbox = $("[name=message]");
     socket.emit('createMessage', {
-        from: "Manu",
+        from: "Vipul",
         text: messageTextbox.val()
     }, function (data) {
         messageTextbox.val('');
