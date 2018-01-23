@@ -70,7 +70,6 @@ $("#message-form").on("submit", function(e) {
   socket.emit(
     "createMessage",
     {
-      from: "Vipul",
       text: messageTextbox.val()
     },
     function(data) {
